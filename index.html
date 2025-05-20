@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manas | Flutter Developer</title>
+    <style>
+        :root {
+            --primary-color: #0468d7;
+            --secondary-color: #2cc1ff;
+            --dark-color: #333;
+            --light-color: #f4f4f4;
+            --success-color: #5cb85c;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 1rem;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #666;
+        }
+
+        .about, .experience, .education, .packages, .contact {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .about h2 {
+            color: var(--primary-color);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .skill {
+            background: var(--light-color);
+            color: var(--dark-color);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            margin: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .experience-item, .education-item, .package-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-item h3, .education-item h3, .package-item h3 {
+            color: var(--dark-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .experience-item p, .education-item p {
+            color: #666;
+        }
+
+        .package-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .package-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact p {
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-img">M</div>
+            <h1>Manas</h1>
+            <p>Flutter Developer</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am a Flutter developer with over 2 years of experience building mobile and desktop applications.</p>
+            
+            <div class="skills">
+                <span class="skill">Flutter</span>
+                <span class="skill">Dart</span>
+                <span class="skill">Mobile Development</span>
+                <span class="skill">Desktop Applications</span>
+                <span class="skill">State Management</span>
+                <span class="skill">Platform-specific Code</span>
+                <span class="skill">App Lifecycle</span>
+                <span class="skill">Background Processing</span>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Flutter Developer</h3>
+                <p>Over 2 years of professional experience in Flutter development, with expertise in:</p>
+                <ul>
+                    <li>Developing cross-platform applications for iOS and Android</li>
+                    <li>Creating desktop applications using Flutter</li>
+                    <li>Implementing industry best practices for code organization and state management</li>
+                    <li>Working with platform-specific code integration</li>
+                    <li>Managing application lifecycles and background states</li>
+                    <li>Creating reusable components and packages</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Patan Multiple Campus</h3>
+                <p>Currently enrolled • Expected graduation: 2026</p>
+            </div>
+        </section>
+
+        <section class="packages">
+            <h2>Packages & Plugins</h2>
+            <div class="package-item">
+                <h3>windows_printer</h3>
+                <p>A Flutter plugin for managing and interacting with printers on Windows platforms.</p>
+                <a href="https://pub.dev/packages/windows_printer" class="package-link" target="_blank">View on pub.dev →</a>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Get In Touch</h2>
+            <div class="social-links">
+                <a href="https://github.com/Manas-Basnet51" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/manasbasnet/" target="_blank">LinkedIn</a>
+                <a href="mailto:manas.chhetri777@gmail.com">Email</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Manas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // You can add any JavaScript functionality here
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Portfolio website loaded successfully');
+        });
+    </script>
+</body>
+</html>
